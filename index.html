@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="theme-color" content="#FBF2E0">
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="apple-touch-icon" href="./icon-180.png">
+<link rel="icon" href="./icon-192.png">
+<meta name="apple-mobile-web-app-title" content="Đồng Vọng">
+<title>Đồng Vọng</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Ba kieu chu tai tu may chu Google. Neu de the stylesheet thuong thi trinh
+     duyet KHONG ve gi ca cho toi khi di ve tan Google mot vong - ma thu duy nhat
+     tren trang la mot the canvas do JS ve, chang lien quan gi toi bang chu ay.
+     media=print thi no tai ngoai duong toi khung hinh dau, xong roi moi bat len. -->
+<link rel="stylesheet" media="print" onload="this.media='all'"
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@800&family=Nunito:wght@600;700;800&family=IBM+Plex+Mono:wght@600&display=swap">
+<style>
+  html, body { margin:0; padding:0; height:100%; overflow:hidden; background:#FBF2E0; }
+  body { -webkit-user-select:none; user-select:none; -webkit-tap-highlight-color:transparent;
+         overscroll-behavior:none; touch-action:none; }
+  /* Tai tho va vach Home cua iPhone nam de len hai dau khung hinh: truoc day
+     the Hat bi che mot nua, con thanh duoi thi vuot len vach Home la trinh
+     duyet keo mat trang len. Lui ca to giay vao trong vung an toan - dai
+     giay diep hai dau la nen cua body, nen nhin van lien mot to. */
+  #game { display:block; touch-action:none;
+          width:100vw;  width:100dvw;
+          height:100vh; height:100dvh;
+          height:calc(100dvh - env(safe-area-inset-top, 0px) - env(safe-area-inset-bottom, 0px));
+          margin-top:env(safe-area-inset-top, 0px); }
+</style>
+  <script type="module" crossorigin src="./assets/index-DBEAxp3b.js"></script>
+</head>
+<body>
+<canvas id="game"></canvas>
+</body>
+</html>
